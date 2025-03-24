@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+{% if prof == "Инженер" %}
+<h2 align="center">Инженерные тренажеры</h2>
+<center>
+    <img src="{{ img }}" align="center"
+         alt="здесь должна была быть картинка, но не нашлась">
+</center>
+{% elif prof == "None" %}
+{% else %}
+<h2 align="center">Научные симуляторы</h2>
+<center>
+    <img src="{{ img }}" align="center"
+         alt="здесь должна была быть картинка, но не нашлась">
+</center>
+{% endif %}
+{% endblock %}
